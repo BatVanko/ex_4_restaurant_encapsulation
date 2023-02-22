@@ -23,4 +23,38 @@ Cake is a dessert. Also, it must have the following class attributes which shoul
 •	CALORIES = 1000 (constant)
 •	PRICE = 5 (constant)
 
+Test Code
+product = Product("coffee", 2.5)
+print(product.__class__.__name__)
+print(product.name)
+print(product.price)
+beverage = Beverage("coffee", 2.5, 50)
+print(beverage.__class__.__name__)
+print(beverage.__class__.__bases__[0].__name__)
+print(beverage.name)
+print(beverage.price)
+print(beverage.milliliters)
+soup = Soup("fish soup", 9.90, 230)
+print(soup.__class__.__name__)
+print(soup.__class__.__bases__[0].__name__)
+print(soup.name)
+print(soup.price)
+print(soup.grams)
+
+
+Output
+
+Product
+coffee
+2.5
+Beverage
+Product
+coffee
+2.5
+50
+Soup
+Starter
+fish soup
+9.9
+230
 
